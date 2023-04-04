@@ -1,0 +1,67 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+header{
+  background: linear-gradient(120deg,#9900cc,#6600cc);
+  padding: 40px 0px 40px 0px;
+  color: whitesmoke;
+  height: 100vh;
+}
+
+#loadingContainer{
+  /* background: linear-gradient(120deg,#9900cc,#6600cc); */
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: lightgray;
+
+
+}
+.nav-item{
+  display: inline-block;
+  margin: 0px 20px 0px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+}
+.nav-item a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.load{
+  animation: rotate 2s linear infinite;
+  
+}
+@keyframes rotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+  
+  
+}
+
+@media only screen and (max-width:768px){
+  .load{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width:425px){
+  nav{
+    display: none;
+  }
+  /* .headerContainer{
+   
+  } */
+  /* #socila-icon-container{
+  display: block !important;
+
+   
+  } */
+}
